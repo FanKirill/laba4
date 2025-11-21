@@ -319,20 +319,45 @@ height: 60px;
 font-size: 20px;
 border-radius: 16px;
 }
-.tablicaa{
+/*.tablicaa{
     
-    /* width:100%; */
+    
 color: aliceblue; 
-border-spacing: 5px ;
+
 background: linear-gradient(#8517ff,#d40be7);
 margin-bottom: 50px;
 }
 table{
-    /*border-collapse: separate;*/
+    
 
     
-    color: aliceblue; /*order:1;    */
+    color: aliceblue; 
     border-spacing: 5px ;
+    font-size: 10px;
+    margin: auto;
+}
+th, td{
+padding: 2px;}
+tr:nth-child(odd){
+    background-color: rgb(60, 210, 30);
+}
+tr:nth-child(even){
+    background-color: rgb(42, 165, 159);
+}*/
+.tablicaa{
+color: aliceblue; 
+border-spacing: 5px ;
+background: linear-gradient(#8517ff,#d40be7);
+margin-bottom: 50px;
+
+margin-top: 50px;
+
+}
+table{
+
+    width:100%;
+    color: aliceblue;    
+    border-spacing: 2px ;
     font-size: 10px;
     margin: auto;
 }
