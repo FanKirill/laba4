@@ -344,31 +344,36 @@ tr:nth-child(odd){
 tr:nth-child(even){
     background-color: rgb(42, 165, 159);
 }*/
-.tablicaa{
-color: aliceblue; 
-border-spacing: 5px ;
-background: linear-gradient(#8517ff,#d40be7);
-margin-bottom: 50px;
-
-margin-top: 50px;
-
+.tablicaa {
+    color: aliceblue; 
+    background: linear-gradient(#8517ff,#d40be7);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 1rem;
 }
-table{
 
-    width:100%;
+table {
+    width: 100%;
     color: aliceblue;    
-    border-spacing: 2px ;
+    border-spacing: 10px !important; /* Увеличиваем расстояние между ячейками */
+    border-collapse: separate !important; /* Явно указываем separate */
     font-size: 10px;
     margin: auto;
 }
-th, td{
-padding: 2px;}
-tr:nth-child(odd){
+
+th, td {
+    padding: 10px !important; /* Увеличиваем внутренние отступы */
+    border: none !important; /* Убираем возможные границы от Bootstrap */
+}
+
+tr:nth-child(odd) {
     background-color: rgb(60, 210, 30);
 }
-tr:nth-child(even){
+
+tr:nth-child(even) {
     background-color: rgb(42, 165, 159);
 }
+
 
 
 footer{
@@ -391,10 +396,18 @@ padding-bottom: 120px ;}
     background-color: #8517ff;}
 
 
+/* Для десктопной версии */
+@media (min-device-width: 768px) {
+    table {
+        border-spacing: 15px !important; /* Еще больше пространства на больших экранах */
+        font-size: 25px;
+    }
     
-.tablicaa{
-color: aliceblue; 
-}
+    th, td {
+        padding: 15px !important;
+    }
+}    
+
 .headertable {
     margin-left: auto ;
     background-color:#8517ff;
@@ -415,16 +428,7 @@ color: aliceblue;
 }
 
 
-table{
-    border-collapse: separate;
-/*width:100%;*/
-color: aliceblue; /*order:1;*/
-background: linear-gradient(#8517ff,#d40be7);
-padding: 1rem;    
-border-spacing: 5px ;
-font-size: 25px;
 
-}
 .Form2{
     background: linear-gradient(#8517ff,#16e6ca);
     color:rgb(255, 255, 255);
